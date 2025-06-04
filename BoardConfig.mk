@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/samsung/r0s
+DEVICE_PATH := device/samsung/r0sxxx
 
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
@@ -14,13 +14,13 @@ TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv9-a
 TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_ABI2 :=
-TARGET_CPU_VARIANT := cortex-a510
+TARGET_CPU_VARIANT := cortex-a55
 
 TARGET_2ND_ARCH := arm
-TARGET_2ND_ARCH_VARIANT := armv8-2a
+TARGET_2ND_ARCH_VARIANT := armv8-a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
-TARGET_2ND_CPU_VARIANT := cortex-a55
+TARGET_2ND_CPU_VARIANT := cortex-a78
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := s5e9925
@@ -83,7 +83,7 @@ TARGET_KERNEL_CLANG_VERSION := r510928
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_DTB_CFG := $(DEVICE_PATH)/configs/kernel/s5e9925.cfg
-BOARD_DTBO_CFG := $(DEVICE_PATH)/configs/kernel/r0s.cfg
+BOARD_DTBO_CFG := $(DEVICE_PATH)/configs/kernel/r0sxxx.cfg
 
 # Kernel modules
 BOARD_RECOVERY_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/init/modules.load))
@@ -163,4 +163,4 @@ BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX_LOCATION := 10
 BOARD_AVB_VENDOR_ADD_HASHTREE_FOOTER_ARGS += --hash_algorithm sha256
 
 # Include the proprietary files BoardConfig.
-include vendor/samsung/r0s/BoardConfigVendor.mk
+include vendor/samsung/r0sxxx/BoardConfigVendor.mk
