@@ -1,5 +1,0 @@
-sec_debug_coredump.ko
-fingerprint.ko
-fingerprint_sysfs.ko
-input_booster_lkm.ko
-wlan.ko

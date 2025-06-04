@@ -1,9 +1,0 @@
-# Audio
-audio.offload.min.duration.secs=30
-ro.audio.spatializer_enabled=true
-
-# Netflix
-ro.netflix.bsp_rev=EXYNOS2200-34703-1
-
-# Property source order
-ro.product.property_source_order=odm,vendor,product,system_ext,system

@@ -1,13 +1,14 @@
 #
-# Copyright (C) 2024 The LineageOS Project
+# Copyright (C) 2025 The Android Open Source Project
+# Copyright (C) 2025 SebaUbuntu's TWRP device tree generator
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_r0sxxx.mk
+    $(LOCAL_DIR)/omni_r0s.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_r0sxxx-user \
-    lineage_r0sxxx-userdebug \
-    lineage_r0sxxx-eng
+    omni_r0s-user \
+    omni_r0s-userdebug \
+    omni_r0s-eng
